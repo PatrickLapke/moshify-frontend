@@ -125,7 +125,8 @@ a {
   }
 }
 
-/* Lists */
+/* LISTS */
+
 .list {
   list-style: none;
   padding-left: 0;
@@ -151,4 +152,27 @@ a {
   .list--tick .list__item {
     padding-left: 0;
   }
+}
+
+/* ICONS */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--primary {
+  /* Fill applies to svg files */
+  fill: var(--color-primary);
+}
+
+.icon-container {
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  /* Height/Width has no affect on inline elements */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
